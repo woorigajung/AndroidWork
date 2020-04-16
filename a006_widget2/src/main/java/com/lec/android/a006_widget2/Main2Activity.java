@@ -37,6 +37,7 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
                 Toast.makeText(getApplicationContext(), "선택 안했어요", Toast.LENGTH_LONG).show();
+
             }
         });
 
