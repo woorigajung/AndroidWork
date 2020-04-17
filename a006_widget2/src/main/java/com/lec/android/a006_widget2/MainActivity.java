@@ -46,16 +46,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 value = value + add;
-//                if(value > 100 || value < 0){
-//                    value = -add;
-//                }
-                // max값과 0이 연결되어 있지 않음
+                if(value > 100 || value < 0){
+                    value = -add;
+                }
                 pb2.setProgress(value);   // 프로그레스바의 진행값 설정
             }
         });
