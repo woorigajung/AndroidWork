@@ -26,9 +26,9 @@ public class PhonebookAdapter_practice extends RecyclerView.Adapter<PhonebookAda
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+
         // 주어진 ViewGroup 으로부터 LayoutInflater 추출
         LayoutInflater inf = LayoutInflater.from(parent.getContext());
-
         // 준비된 레이아웃(XML) 으로부터 View를 만들어 ViewGroup 에 붙이고
         // 만들어진 View 를 리턴한다.
         View itemView = inf.inflate(R.layout.item, parent, false);

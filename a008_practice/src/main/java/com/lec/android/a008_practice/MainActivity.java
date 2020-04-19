@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         rv = findViewById(R.id.rv);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-
+                                                                        // context는 프로그램이 메모리에 올라갔을 때, 실행되기 위해서 필수로 필요한 메모리영역
         rv.setLayoutManager(layoutManager);
         adapter = new PhonebookAdapter_practice();
 

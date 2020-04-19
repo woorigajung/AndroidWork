@@ -9,10 +9,12 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#00FF00"
+        android:background="#000000"
         android:text="첫번째 TextView"
         android:textColor="#0D47A1"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:backgroundTint="#99ff00"
+        />
 
     <TextView
         android:id="@+id/textView2"
@@ -35,8 +37,8 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         android:textColor="#BF360C"
-        android:padding="10dp"
-        android:background="@color/colorAccent"/>
+        android:padding="100dp"
+        android:background="@color/colorPrimary"/>
 </LinearLayout>
 
 

@@ -45,7 +45,7 @@ public class Main3Activity extends AppCompatActivity {
     private String imgPath
             //= "/storage/emulated/0/DCIM/Camera/IMG_20200416_043147.jpg";
     = "/storage/emulated/0/DCIM/Camera/france.png";
-    //= "/sdcard/DCIM/Camera/IMG_20200416_043136.jpg";
+        //= "/sdcard/DCIM/Camera/IMG_20200416_043136.jpg";
 
     private final int PERMISSION_REQUEST_CODE = 101;  // 권한 요청 코드값 (int)
     private final String [] PERMISSSIONS = {// 요청할 권한들을 String[] 로 준비
@@ -115,19 +115,10 @@ public class Main3Activity extends AppCompatActivity {
                     Log.d("myapp", "권한획득결과\n\t" + Arrays.toString(permissions) + " : " + Arrays.toString(grantResults));
                 } else {
                     // 사용자가 권한 승인 안함!
-
                 }
                 break;
         }
-
-
-
     }
-
-
-
-
-
 } // end Activity
 
 
