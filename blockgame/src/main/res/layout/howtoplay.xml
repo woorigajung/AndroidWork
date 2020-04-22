@@ -15,7 +15,7 @@
         android:layout_marginTop="50dp"
         android:background="#CCFFFFFF"
         android:gravity="center"
-        android:text="떨어지는 블러과\n같은 색깔의 버튼을 누르세요."
+        android:text="떨어지는 블럭과\n같은 색깔의 버튼을 누르세요."
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#202221</color>
+
+    <!-- 색상 리소스 -->
+    <color name="bgColorYellow">#E6E07F</color>
+    <color name="bgColorOrange">#F19100</color>
+    <color name="bgColorCyan">#C5F0F1</color>
+</resources>

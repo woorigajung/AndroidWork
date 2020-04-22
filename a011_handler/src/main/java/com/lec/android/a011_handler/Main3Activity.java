@@ -108,7 +108,7 @@ public class Main3Activity extends AppCompatActivity {
                 .setPositiveButton("예",new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        //버튼을 동해서도 런러블 생성해서 보낼수있다.
+                        //버튼을 통해서도 런러블 생성해서 보낼수있다.
                         Button btnUpload=findViewById(R.id.btnUpload3);
                         btnUpload.postDelayed(new Runnable() {
                             @Override

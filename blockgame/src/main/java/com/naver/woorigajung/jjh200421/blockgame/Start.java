@@ -26,7 +26,7 @@ public class Start extends AppCompatActivity implements View.OnClickListener {
     TextView tvTime;    // 시간표시
     TextView tvPoint;    // 점수표시
 
-    int time = 3;  // 시간값
+    int time = 30;  // 시간값
     int point = 0;  // 점수값
 
     // 블럭이미지 리소스 배열
@@ -81,7 +81,10 @@ public class Start extends AppCompatActivity implements View.OnClickListener {
                                             point = 0;
                                             tvTime.setText("시간:" + time);
                                             tvPoint.setText("점수:"+ point);
-                                            new GameThread().start();   // 새로운 게임 시작!
+                                            GameThread g2 = new GameThread();
+                                            g2.setDaemon(true);
+                                            g2.start();
+
                                         }
                                     })
                                     ;

@@ -17,7 +17,7 @@ import android.widget.TextView;
  *    AsyncTask 의 메소드
  *      onPreExecute() : 백그라운드 작업 시작하기 전에 호출
  *      doInBackground() : 백그라운드 작업, 시간이 많이 걸리는 '통신' 작업이나 복잡한 연산 작업등을 (비동기로)수행케 해야 한다.
- *      onProgressUpdate() : 백그라운즈 작업 도중 (여러번) 호출가능, 중간중간에 UI업데이트시 사용 가능!
+ *      onProgressUpdate() : 백그라운드 작업 도중 (여러번) 호출가능, 중간중간에 UI업데이트시 사용 가능!
  *      onPostExecute() : doInBackground() 완료되면 호출
  *
  *    AsyncTask<Params, Progress, Result>
