@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     ((EditText)v).setBackgroundColor(Color.YELLOW);
                 } else {
                     // 투명색
-                    ((EditText)v).setBackgroundColor(Color.parseColor("#000000"));
+                    ((EditText)v).setBackgroundColor(Color.parseColor("#00000000"));
                 }
             }
         });

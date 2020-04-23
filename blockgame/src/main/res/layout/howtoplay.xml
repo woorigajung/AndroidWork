@@ -5,29 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/main"
-    tools:context=".HowToPlay"
-    >
+    tools:context=".HowToPlay">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="331dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="50dp"
         android:background="#CCFFFFFF"
-        android:gravity="center"
+        android:layout_width="315dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="60dp"
         android:text="떨어지는 블럭과\n같은 색깔의 버튼을 누르세요."
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="133dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="56dp"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+

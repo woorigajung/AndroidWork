@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:text="안녕하세요 케케케">
+        android:text="안녕하세요">
         <requestFocus />
     </EditText>
 
@@ -40,6 +40,4 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </LinearLayout>
-
-
 

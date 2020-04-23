@@ -8,13 +8,13 @@ import android.util.Log;
 import android.widget.EditText;
 
 
-// SharePreference
+// SharedPreference
 // key-value 쌍으로 데이터 저장
 // 작은 데이터들 (세팅값들) 저장 용도로 활용
 public class Main5Activity extends AppCompatActivity {
+
     EditText etInput;
     String sfName = "myFile";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,12 +22,11 @@ public class Main5Activity extends AppCompatActivity {
 
         etInput = findViewById(R.id.etInput);
 
-
         // 저장되어 있든 값을 꺼내서 보여주기
-        SharedPreferences sf = getSharedPreferences(sfName,MODE_PRIVATE);
-        String str = sf.getString("name","");   // 키값으로 꺼냄
-        String xx = sf.getString("xx","ABC");
-        String yy = sf.getString("yy","XYZ");
+        SharedPreferences sf = getSharedPreferences(sfName, MODE_PRIVATE);
+        String str = sf.getString("name", "");  // 키값으로 꺼냄
+        String xx = sf.getString("xx", "ABC");
+        String yy = sf.getString("yy", "XYZ");
 
         etInput.setText(str);
         Log.d("myapp", str + " - " + xx + " - " + yy);
@@ -47,6 +46,20 @@ public class Main5Activity extends AppCompatActivity {
 
         editor.putString("name", str);
         editor.putString("xx", "가나다");
-        editor.commit();    // 파일에 최종 반영함.
+        editor.commit();  // 파일에 최종 반영함.
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -28,8 +28,8 @@ public class PhonebookDetail extends AppCompatActivity {
         Phonebook pb = (Phonebook)intent.getSerializableExtra("pb");
         ivPhoto.setImageResource(pb.getPhoto());
         tvName.setText(pb.getName());
-        tvPhone.setText(pb.getPhone());
         tvEmail.setText(pb.getEmail());
+        tvPhone.setText(pb.getPhone());
 
         Button btnBack = findViewById(R.id.btnBack);
         btnBack.setOnClickListener(new View.OnClickListener() {
@@ -41,3 +41,14 @@ public class PhonebookDetail extends AppCompatActivity {
         });
     }
 }
+
+
+
+
+
+
+
+
+
+
+

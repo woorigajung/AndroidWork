@@ -45,12 +45,12 @@ public class Main2Activity extends AppCompatActivity {
         Log.d("myapp", "onCreateContextMenu()");
 
         // 각각의 뷰 (위젯) (View v) 마다 다르게 메뉴 작동하도록 설정 가능
-        switch (v.getId()) {
+        switch(v.getId()){
             case R.id.tvCtxMenu:
 
                 menu.setHeaderTitle("색상을 선택하세요")
-                //.setHeaderIcon(R.drawable.face01);
-                ;
+                    //.setHeaderIcon(R.drawable.face01);
+                    ;
                 menu.add(0, 1, 100, "빨강");
                 menu.add(0, 2, 100, "녹색");
                 menu.add(0, 3, 100, "파랑");
@@ -65,37 +65,37 @@ public class Main2Activity extends AppCompatActivity {
         }
 
 
+
     }
 
     // onContextItemSelected(MenuItem)
     // ContextMenu 의 메뉴아이템 항목을 선택(클릭) 했을 때 호출
     @Override
     public boolean onContextItemSelected(@NonNull MenuItem item) {
-        Log.d("myapp", "onContextItemSelected");
+        Log.d("myapp", "onContextItemSelected()");
         showInfo(item);
 
-        int id = item.getItemId();  //메뉴 아이템의 id값
-        int groupId = item.getGroupId(); // 메뉴아이템의 그룹아이디 값
+        int id = item.getItemId();   // 메뉴아이템의 id값
+        int groupId = item.getGroupId();   // 메뉴아이템의 그룹아이디 값
 
-        switch (groupId) {
+        switch(groupId){
             case 0:
-                switch (id) {
-                    case 1: // 빨강
+                switch (id){
+                    case 1 : // 빨강
                         tvCtxMenu.setTextColor(Color.RED);
                         return true;
-                    case 2: // 녹색
+                    case 2 : // 녹색
                         tvCtxMenu.setTextColor(Color.GREEN);
                         return true;
-                    case 3: // 파랑
+                    case 3 : // 파랑
                         tvCtxMenu.setTextColor(Color.BLUE);
                         return true;
                 }
-
                 break;
 
             case 1:
-                switch (id) {
-                    case 1:
+                switch(id){
+                    case 1 :
                         ivCtxMenu.setImageResource(R.drawable.face01);
                         return true;
                     case 2:
@@ -104,16 +104,15 @@ public class Main2Activity extends AppCompatActivity {
                     case 3:
                         ivCtxMenu.setImageResource(R.drawable.face03);
                         return true;
-
                 }
                 break;
-
         } // end switch
+
 
         return super.onContextItemSelected(item);
     }
 
-    public void showInfo(MenuItem item) {
+    public void showInfo(MenuItem item){
         int id = item.getItemId();   // 옵션메뉴 아이템의 id 값
         String title = item.getTitle().toString();   // 옵션 메뉴의 title
         int groupId = item.getGroupId();   // 옵션 메뉴의 그룹아이디
@@ -123,6 +122,8 @@ public class Main2Activity extends AppCompatActivity {
         Log.d("myapp", msg);
         Toast.makeText(getApplicationContext(), title + " 메뉴 클릭", Toast.LENGTH_SHORT).show();
     }
+
+
 
 
 } // end Activity

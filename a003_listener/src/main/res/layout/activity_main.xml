@@ -33,8 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button3"
-            />
+            android:text="Button3" />
     </LinearLayout>
 
     <TextView
@@ -47,17 +46,15 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:stretchColumns="*"
-        >
+        android:stretchColumns="*">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent" >
 
             <Button
                 android:id="@+id/btnA"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="A"
                 android:layout_column="0"
@@ -65,7 +62,7 @@
 
             <Button
                 android:id="@+id/btnB"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="B"
                 android:layout_column="1"
@@ -73,12 +70,11 @@
 
             <Button
                 android:id="@+id/btnC"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="2"
-                android:tag="Cookie"
-                android:text="C" />
-
+                android:text="C"
+                android:tag="Cookie"/>
         </TableRow>
 
         <TableRow
@@ -108,7 +104,6 @@
                 android:layout_column="2"
                 android:text="F"
                 android:tag="Froyo"/>
-
         </TableRow>
 
         <TableRow
@@ -116,8 +111,8 @@
             android:layout_height="match_parent">
             <EditText
                 android:id="@+id/et"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:layout_span="3"
                 android:ems="10"

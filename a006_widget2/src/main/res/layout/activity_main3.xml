@@ -27,8 +27,7 @@
         android:layout_height="wrap_content"
         android:max="200"
         android:progress="50"
-        android:thumb="@mipmap/ic_launcher"
-        />
+        android:thumb="@mipmap/ic_launcher"/>
 </LinearLayout>
 
 

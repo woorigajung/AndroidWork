@@ -38,46 +38,65 @@ public class Main3Activity extends AppCompatActivity {
     } // end of onCreate
 
     protected Dialog showPickerDialog(int id){
+
         switch (id){
             case DIALOG_DATE:
                 DatePickerDialog dpd = new DatePickerDialog(
-                        this, // 현재 화면의 제어권자.
+                        this,   // 현재 화면의 제어권자.
 
-                        // 날짜 설정후 Dialog 빠져나올 때 호출되는 콜백
+                        // 날짜 설정후 Dialog 빠져나올때 호출된는 콜백
                         new DatePickerDialog.OnDateSetListener() {
                             @Override
                             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                                Toast.makeText(getApplicationContext(), year + "년"
-                                        + (month + 1) + "월" + dayOfMonth + "일 선택",
-                                        Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(),
+                                        year + "년" + (month + 1) + "월" + dayOfMonth + "일 선택",
+                                        Toast.LENGTH_SHORT
+                                        ).show();
                             }
                         },
-                        2000,4,12   // 기본값 연월일일
+                        2020, 3, 21    // 기본값 연월일
                 );
                 dpd.show();
                 return dpd;
-           case DIALOG_TIME:
-               TimePickerDialog tpd =
-                       new TimePickerDialog(this,
 
-                               // 시간값 선택후 호출되는 콜백
-                               new TimePickerDialog.OnTimeSetListener() {
-                                   @Override
-                                   public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-                                       Toast.makeText(getApplicationContext(),
-                                               hourOfDay + "시" + minute + "분 선택",
-                                               Toast.LENGTH_SHORT).show();
-                                   }
-                               },
-                               17,21,false  // 기본값 시, 분 등록
-                               // is24HoursView
-                               // true : 24시간제 (0 ~ 23) 표시
-                               // flase : 12시간제 (오전/오후) 항목 표시
-                       );
-               tpd.show();
+            case DIALOG_TIME:
+                TimePickerDialog tpd =
+                        new TimePickerDialog(this,
+                                // 시간값 선택후 호출되는 콜백
+                                new TimePickerDialog.OnTimeSetListener() {
+                                    @Override
+                                    public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                                        Toast.makeText(getApplicationContext(),
+                                                hourOfDay + "시" + minute + "분 선택",
+                                                Toast.LENGTH_SHORT
+                                                ).show();
+                                    }
+                                },
+                                17, 21, false   // 기본값 시, 분 등록
+                                // is24HoursView
+                                //   true: 24시간제 (0 ~ 23) 표시
+                                //   false : 12시간제 (오전/오후) 항목 표시
+                        );
+                tpd.show();
                 return tpd;
         }
-        return null;
-    }
 
-}
+
+        return null;
+    } // end showPickerDialog()
+
+
+
+
+
+} // end Activity
+
+
+
+
+
+
+
+
+
+

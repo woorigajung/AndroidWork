@@ -37,5 +37,3 @@
         android:text="결과창"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 </LinearLayout>
-
-

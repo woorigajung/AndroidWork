@@ -40,5 +40,3 @@
         android:layout_height="wrap_content"
         android:text="돌아가기" />
 </LinearLayout>
-
-

@@ -47,5 +47,3 @@
         android:onClick="mOnClick4"
         android:text="UPLOAD4" />
 </LinearLayout>
-
-

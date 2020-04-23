@@ -81,8 +81,8 @@ public class Main4Activity extends AppCompatActivity {
 
             @Override
             public void onTick(long millisUntilFinished) { // 매 간격마다 수행하는 코드
-                value4++;
-                tvResult4.setText("Value4 = " + value4);
+                 value4++;
+                 tvResult4.setText("Value4 = " + value4);
             }
 
             @Override

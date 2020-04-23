@@ -7,9 +7,10 @@ public class Phonebook implements Serializable {
     int photo; // 사진
     String name; // 이름
     String phone; // 전화번호
-    String email;// 이메일
+    String email; // 이메일
 
-    public Phonebook() {}
+    public Phonebook() {
+    }
 
     public Phonebook(int photo, String name, String phone, String email) {
         this.photo = photo;
@@ -22,32 +23,31 @@ public class Phonebook implements Serializable {
         return photo;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
     public void setPhoto(int photo) {
         this.photo = photo;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
+    public String getPhone() {
+        return phone;
+    }
+
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     public void setEmail(String email) {
         this.email = email;
     }
-}
-
+} // end Phonebook

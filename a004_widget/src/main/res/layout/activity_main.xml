@@ -58,7 +58,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    />
             </TableRow>
 
             <TableRow
@@ -77,8 +78,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="이메일 입력"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="textEmailAddress"
+                    android:hint="이메일 입력"/>
             </TableRow>
 
             <TableRow
@@ -97,7 +98,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    />
             </TableRow>
 
             <TableRow
@@ -108,8 +110,8 @@
                     android:id="@+id/tvResult"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_span="2"
                     android:text="TextView"
+                    android:layout_span="2"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             </TableRow>

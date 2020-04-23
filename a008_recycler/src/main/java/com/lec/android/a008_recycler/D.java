@@ -81,11 +81,32 @@ public class D {
             "021@mail.com"
     };
 
-    private  static int idx = 0;
+    private static int idx = 0;
 
     public static int next(){
         idx = idx % FACEID.length;
-        return idx++; // idx 값 리턴하고 1증가
+        return idx++;   // idx 값 리턴하고 1증가
     }
 
-}   // end D
+
+
+
+
+} // end D
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

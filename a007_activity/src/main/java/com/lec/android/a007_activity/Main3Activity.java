@@ -16,7 +16,7 @@ public class Main3Activity extends AppCompatActivity {
     Button btnStart;
     TextView tvResult;
 
-    private final int REQUEST_CODE_CALC = 11;
+    private final int REQUEST_CODE_CALC = 101;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,19 +55,21 @@ public class Main3Activity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-    if(resultCode == RESULT_OK){    // 정상 반환인 경우
-        switch (requestCode){
-            case REQUEST_CODE_CALC:
-                int a = data.getIntExtra("plus",0);
-                int b = data.getIntExtra("minus",0);
+        if(resultCode == RESULT_OK){  // 정상 반환이 경우
 
-                tvResult.setText(requestCode + " ] 받아온 값: " + a + " : " + b);
-                break;
+            switch (requestCode){
+                case REQUEST_CODE_CALC:
+                    int a = data.getIntExtra("plus", 0);
+                    int b = data.getIntExtra("minus", 0);
+
+                    tvResult.setText(requestCode + "] 받아온 값: " + a + " : " + b);
+                    break;
+            }
+
+
+        } else {
+            // 정상 결과가 아닌 경우 처리
         }
-    } else {
-        // 정상 결과가 아닌 경우 처리
-    }
-
 
     }
 

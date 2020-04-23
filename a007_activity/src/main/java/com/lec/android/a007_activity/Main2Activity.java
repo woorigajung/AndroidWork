@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,7 +19,6 @@ import android.widget.EditText;
  *  안드로이드는 startActivity() 로 새 액티비티를 시작하면
  *  적측형(stack) 구조로 액티비티가 운영된다.
  */
-
 public class Main2Activity extends AppCompatActivity {
 
     EditText etName;
@@ -72,6 +70,7 @@ public class Main2Activity extends AppCompatActivity {
         });
 
     } // end onCreate
+
 
 } // end Activity
 
